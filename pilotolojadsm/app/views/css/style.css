@@ -1,0 +1,187 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Estilos básicos de cabeçalho e navegação */
+header {
+    padding: 10px 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.logo h3 {
+    cursor: pointer;
+}
+
+.logo h3:hover {
+    opacity: 0.7;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right; 
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links li a:hover {
+    opacity: 0.7;
+}
+
+.info-header {
+    display: flex;
+    align-items: center;
+}
+
+.info-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+/* Estilos básicos de conteúdo */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: flex-start; 
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #fff; 
+    padding: 20px;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #444;
+    padding: 10px 15px;
+}
+
+.sidebar a:hover {
+    background-color: #f5f5f5;
+}
+
+.content {
+    width: 80%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-left: 10px; 
+}
+
+.titulo-secao {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.titulo-secao h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.titulo-secao p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.stroke {
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* Estilos básicos do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.svg-redes {
+    margin-top: 10px;
+}
+
+.svg-redes a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+/* Estilos básicos do contato no rodapé */
+.foot-contac {
+    margin-top: 10px;
+}
+
+.foot-contac p {
+    margin-bottom: 5px;
+}
+
+/* Estilos básicos do endereço no rodapé */
+.end {
+    margin-top: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+}
